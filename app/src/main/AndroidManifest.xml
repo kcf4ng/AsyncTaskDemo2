@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.asynctaskdemo2">
+    <!--使用相機鏡頭的權限-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--使用相機鏡頭自動對焦的權限-->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!--錄音的權限-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--控制藍芽的權限-->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!--連接藍芽的權限-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!--取得網路狀態的權限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--連網的權限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--讀寫外部記憶裝置的權限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--GPS位置的權限(粗略)-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--GPS位置的權限(精細)-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--取得手機狀態的權限-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--更改手機設定的權限-->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <!--取得手機連絡人的權限-->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!--接收重開機提醒的權限-->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--手機震動功能的權限-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--喚醒手機螢幕的權限-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--從背景跳出對話視窗的權限-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
